@@ -1,0 +1,270 @@
+* {
+    background: #49abba;
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+/* Container for the logo and social links */
+.header-container {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    gap: 200px; 
+    padding: 1px; 
+}
+
+.logo {
+    width: 32px; 
+}
+
+/* Container for small images */
+.small-images {
+    display: flex;
+}
+
+.small-images img {
+    width: 90px;
+    align-items: center; 
+}
+
+.social-links {
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.social-links img {
+    width: 50px; 
+}
+
+main {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 90px;
+}
+
+.text-area {
+    border: none;
+    color: rgb(255, 255, 255);
+    margin-top: 80px;
+    text-transform: lowercase;
+    font-size: 32px;
+}
+::placeholder {
+    color: rgba(64, 100, 129, 0.698);
+}
+.text-area:focus {
+    outline: none;
+}
+
+.message {
+    background: #89e4f230;
+    background-image: url("img/alura.png");
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    color: rgb(150, 42, 90);
+    margin-left: 100px;
+    margin-top: 10px;
+    padding-left: 10px;
+    position: fixed;
+    font-size: 32px;
+}
+
+.message:focus {
+    outline: none;
+}
+
+.text-container {
+    margin-left: 115px;
+    margin-top: 293px;
+    position: fixed;
+    text-align: center;
+}
+
+.no-message {
+    color: rgb(150, 42, 90);
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.enter-text {
+    color: rgb(150, 42, 90);
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.copy {
+    margin-left: 98px;
+    margin-top: 280px;
+    position: fixed;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    gap: 2px; 
+    justify-content: flex-start;
+}
+
+.alerta-img {
+    width: 20px; 
+    height: auto;
+}
+
+.information {
+    font-size: 14px;
+    margin: 0; 
+    color: rgba(64, 100, 129, 0.698);
+    font-size: 15px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 18px;
+}
+
+.btn-decrypt, .btn-encrypt, .copy {
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    font-size: 32px;
+}
+
+.btn-encrypt {
+    background: linear-gradient(135deg, #41b5cc 0%, #441636 100%);
+    border: 1px solid #00000061;
+    height: 67px;
+    width: 330px;
+}
+
+.btn-decrypt {
+    background: linear-gradient(135deg, #41b5cc 0%, #441636 100%);
+    border: 1px solid #00000061;
+    height: 67px;
+    margin-left: 30px;
+    width: 330px;
+}
+
+.copy {
+    background: linear-gradient(135deg, #41b5cc 0%, #441636 100%);
+    border: 1px solid #0000009e;
+    height: 55px;
+    margin-left: 210px;
+    margin-top: 420px;
+    position: absolute;
+    width: 200px;
+}
+
+.btn-encrypt:hover, .btn-decrypt:hover, .copy:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-encrypt:focus, .btn-decrypt:focus, .copy:focus {
+    outline: none; 
+    border: 2px solid #ffffff; 
+    transform: scale(1.05); 
+}
+
+footer {
+    position: absolute; 
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0); 
+    text-align: center;
+    padding: 1px 0;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 57.6em) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1px; 
+    }
+
+    .logo {
+        width: 24px;
+    }
+
+    .small-images img {
+        width: 50px; 
+    }
+
+    .social-links img {
+        width: 40px;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+        padding: 1px;
+    }
+
+    .text-area {
+        margin-top: 20px;
+        font-size: 24px; 
+    }
+
+    .message {
+        font-size: 24px;
+        margin-left: 0;
+        padding: 10px;
+        position: relative;
+        background-size: contain; 
+        background-position: center;
+        width: 100%; 
+        max-width: 400px; 
+        min-height: 150px;
+    }
+
+    .text-container {
+        margin-left: 0;
+        margin-top: 5px;
+        text-align: center;
+        position: relative;
+    }
+
+    .no-message {
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+
+    .enter-text {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .btn-encrypt, .btn-decrypt, .copy {
+        width: 100%;
+        max-width: 300px;
+        font-size: 18px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .copy {
+        margin-left: 0;
+        margin-top: 20px;
+        position: relative; 
+    }
+    
+    footer {
+        font-size: 10px;
+        position: relative;
+    }
+}
